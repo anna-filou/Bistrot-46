@@ -2,7 +2,7 @@
     {% case page.lang %}
       {% when 'en' %}
         {% for breakfast in site.breakfasts %}
-          <div class="breakfast"><img src="{{ breakfast.thumbnail }}" alt="Photo of Food" class="menu-img">
+          <div class="manu-item"><img src="{{ breakfast.thumbnail }}" alt="Photo of Food" class="menu-img">
             <div class="menu-text">
               <h2 class="h2">{{ breakfast.name-en }}, €&nbsp;{{ breakfast.price }}</h2>
               <div class="menu-description">{{ breakfast.description-en }}</div>
@@ -11,7 +11,7 @@
         {% endfor %}
       {% when 'gr' %}
         {% for breakfast in site.breakfasts %}
-          <div class="breakfast"><img src="{{ breakfast.thumbnail }}" alt="Photo of Food" class="menu-img">
+          <div class="manu-item"><img src="{{ breakfast.thumbnail }}" alt="Photo of Food" class="menu-img">
             <div class="menu-text">
               <h2 class="h2">{{ breakfast.name-gr }}, €&nbsp;{{ breakfast.price }}</h2>
               <div class="menu-description">{{ breakfast.description-gr }}</div>
