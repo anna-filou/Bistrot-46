@@ -4,7 +4,7 @@
         {% for salad in site.salads %}
           <div class="menu-item"><img src="{{ menu-item.thumbnail }}" alt="Photo of Food" class="menu-img">
             <div class="menu-text">
-              <h2 class="h2">{{ menu-item.name-en }}, €&nbsp;{{ menu-item.price }}</h2>
+              <h2 class="h2">{{ salad.name-en }}, €&nbsp;{{ salad.price }}</h2>
               <div class="menu-description">{{ menu-item.description-en }}</div>
             </div>
           </div>
@@ -13,7 +13,7 @@
         {% for salad in site.salads %}
           <div class="menu-item"><img src="{{ menu-item.thumbnail }}" alt="Photo of Food" class="menu-img">
             <div class="menu-text">
-              <h2 class="h2">{{ menu-item.name-gr }}, €&nbsp;{{ menu-item.price }}</h2>
+              <h2 class="h2">{{ salad.name-gr }}, €&nbsp;{{ salad.price }}</h2>
               <div class="menu-description">{{ menu-item.description-gr }}</div>
             </div>
           </div>
