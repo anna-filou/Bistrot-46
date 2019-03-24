@@ -1,5 +1,7 @@
     <!-- START MAIN -->
-        {% for menu-item in site.menu-items %}
+    {% case page.lang %}
+      {% when 'en' %}
+        {% for menu-item in site.menu-items | where: category","main" %}
           <div class="menu-item"><img src="{{ menu-item.thumbnail }}" alt="Photo of Food" class="menu-img">
             <div class="menu-text">
               <h2 class="h2">{{ menu-item.name-en }}, €&nbsp;{{ menu-item.price }}</h2>
@@ -7,4 +9,14 @@
             </div>
           </div>
         {% endfor %}
+      {% when 'gr' %}
+        {% for menu-item in site.menu-items | where:"category","drinks" %}
+          <div class="menu-item"><img src="{{ menu-item.thumbnail }}" alt="Photo of Food" class="menu-img">
+            <div class="menu-text">
+              <h2 class="h2">{{ menu-item.name-gr }}, €&nbsp;{{ menu-item.price }}</h2>
+              <div class="menu-description">{{ menu-item.description-gr }}</div>
+            </div>
+          </div>
+        {% endfor %}
+    {% endcase %}
     <!-- END MAIN -->
