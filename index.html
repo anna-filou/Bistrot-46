@@ -15,7 +15,7 @@ lang: gr
   </div>
   <section id="top">
     <header id="header" class="hero-section-with-background-image">
-      <div id="nav" class="w-layout-grid nav-grid"><img src="images/favicon---original---light.png" id="w-node-62585eeccbd5-72c2628d" alt="" class="nav-logo"><a id="w-node-331d41f7eea0-72c2628d" href="en.html" class="flag-icon flag-mobile w-inline-block"><img src="images/icons8-usa.png" alt=""></a>
+      <div id="nav" class="w-layout-grid nav-grid"><img src="images/favicon---original---light.png" id="w-node-62585eeccbd5-72c2628d" alt="" class="nav-logo"><a id="w-node-331d41f7eea0-72c2628d" href="/en" class="flag-icon flag-mobile w-inline-block"><img src="images/icons8-usa.png" alt=""></a>
         <div id="w-node-62585eeccbe0-72c2628d" class="cta-button-container">
           <a href="tel:+302117100378" class="button filled-button button-fill-green w-inline-block">
             <div class="icon-font icon-font-left icon-font-large"></div>
@@ -24,7 +24,7 @@ lang: gr
           <a href="https://www.google.com/maps/dir//BISTROT+46/data=!4m8!4m7!1m0!1m5!1m1!1s0x14a1bd43512a1137:0xbabd242d6252c985!2m2!1d23.7509454!2d37.9734827" target="_blank" class="button filled-button button-fill-blue w-inline-block">
             <div class="icon-font icon-font-left icon-font-large"></div>
             <div class="text-block-4"> οδηγειεσ</div>
-          </a><a href="en.html" class="flag-icon w-inline-block"><img src="images/icons8-great_britain.png" alt=""></a></div>
+          </a><a href="/en" class="flag-icon w-inline-block"><img src="images/icons8-great_britain.png" alt=""></a></div>
       </div>
       <div class="_wf-hero-section-1 hero-background-image">
         <div class="_wf-hero-container-2-white background-image-text-container w-container">
@@ -134,70 +134,7 @@ lang: gr
         <h1 class="features-subheader">Επιλεγμένα Πιάτα από</h1>
         <h1 class="feature-header">το Μενού μας</h1>
       </div>
-<!-- START MENU -->
-  <div id="menu-tabs" class="tabs-wrapper">
-    <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
-      <div class="tabs-menu w-tab-menu">
-        <a data-w-tab="1-Food" class="tab-link w-inline-block w-tab-link">
-          <div>
-            Main
-            {% if page.lang == "en" %}
-            Main
-            {% else %}
-            Κυρίως
-            {% endif %}
-          </div>
-        </a>
-        <a data-w-tab="Salads" class="tab-link w-inline-block w-tab-link">
-          <div>
-            {% if page.lang == "en" %}
-            Salads
-            {% else %}
-            Σαλάτες
-            {% endif %}
-          </div>
-        </a>
-        <a data-w-tab="Breakfast" class="tab-link w-inline-block w-tab-link">
-          <div>
-            {% if page.lang == "en" %}
-            Breakfast
-            {% else %}
-            Πρωινό
-            {% endif %}
-          </div>
-        </a>
-        <a data-w-tab="Beverages" class="tab-link w-inline-block w-tab-link w--current">
-          <div>
-            {% if page.lang == "en" %}
-            BEVERAGES
-            {% else %}
-            Ποτά
-            {% endif %}
-          </div>
-        </a>
-      </div>
-      <div class="tabs-content w-tab-content">
-        <div data-w-tab="1-Food" class="w-tab-pane">
-          <div class="separator-2"></div>
-          {% include menu-main.html %}
-        </div>
-        <div data-w-tab="Salads" class="w-tab-pane">
-          <div class="separator-2"></div>
-            {% include menu-salads.html %}
-        </div>
-        <div data-w-tab="Breakfast" class="tab-pane w-tab-pane">
-          <div class="separator-2"></div>
-          {% include menu-breakfast.html %}
-        </div>
-        <div data-w-tab="Beverages" class="w-tab-pane w--tab-active">
-          <div class="separator-2"></div>
-          {% include menu-drinks.html %}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- END MENU -->
+      {% include menu.html %}
     </div>
   </div>
   <section id="reviews">
