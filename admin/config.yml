@@ -1,0 +1,66 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# This line should *not* be indented
+publish_mode: # optional
+
+# This line should *not* be indented
+media_folder: "menu-photos" # original: Media files will be stored in the repo under images/uploads
+
+# CMS UI will include a link in the fixed area at the top of the page, easily return to main site
+display_url: https://bistrot46.gr
+
+# CMS UI will change the logo displayed at the top of the login page
+logo_url: 
+
+# collections are 100% dependent on the actual content you want on the site
+collections:
+  - name: "main" # Used in routes, e.g., /admin/collections/blog
+    label: "Κυρίως Πιάτα" # Used in the UI
+    folder: "menu-items/_mains" # The path to the folder where the documents are stored, _posts/blog"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Ελληνικό Όνομα", name: "name-gr", widget: "string"}
+      - {label: "Ελληνική Περιγραφή", name: "description-gr", widget: "text"}
+      - {label: "Αγγλικό Όνομα", name: "name-en", widget: "string"}
+      - {label: "Αγγλική Περιγραφή", name: "description-en", widget: "text"}
+      - {label: "Εικονίδιο", name: "thumbnail", required: false, widget: "image"}
+      - {label: "Τιμή σε €", name: "price", widget: "number"}
+  - name: "salads" # Used in routes, e.g., /admin/collections/blog
+    label: "Σαλάτες" # Used in the UI
+    folder: "menu-items/_salads" # The path to the folder where the documents are stored, _posts/blog"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Ελληνικό Όνομα", name: "name-gr", widget: "string"}
+      - {label: "Ελληνική Περιγραφή", name: "description-gr", widget: "text"}
+      - {label: "Αγγλικό Όνομα", name: "name-en", widget: "string"}
+      - {label: "Αγγλική Περιγραφή", name: "description-en", widget: "text"}
+      - {label: "Εικονίδιο", name: "thumbnail", required: false, widget: "image"}
+      - {label: "Τιμή σε €", name: "price", widget: "number"}
+  - name: "breakfasts" # Used in routes, e.g., /admin/collections/blog
+    label: "Πρωινά" # Used in the UI
+    folder: "menu-items/_breakfasts" # The path to the folder where the documents are stored, _posts/blog"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Ελληνικό Όνομα", name: "name-gr", widget: "string"}
+      - {label: "Ελληνική Περιγραφή", name: "description-gr", widget: "text"}
+      - {label: "Αγγλικό Όνομα", name: "name-en", widget: "string"}
+      - {label: "Αγγλική Περιγραφή", name: "description-en", widget: "text"}
+      - {label: "Εικονίδιο", name: "thumbnail", required: false, widget: "image"}
+      - {label: "Τιμή σε €", name: "price", widget: "number"}
+  - name: "drinks" # Used in routes, e.g., /admin/collections/blog
+    label: "Ποτά" # Used in the UI
+    folder: "menu-items/_drinks" # The path to the folder where the documents are stored, _posts/blog"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Ελληνικό Όνομα", name: "name-gr", widget: "string"}
+      - {label: "Ελληνική Περιγραφή", name: "description-gr", widget: "text"}
+      - {label: "Αγγλικό Όνομα", name: "name-en", widget: "string"}
+      - {label: "Αγγλική Περιγραφή", name: "description-en", widget: "text"}
+      - {label: "Εικονίδιο", name: "thumbnail", required: false, widget: "image"}
+      - {label: "Τιμή σε €", name: "price", widget: "number"}
