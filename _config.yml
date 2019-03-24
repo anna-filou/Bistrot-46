@@ -23,6 +23,9 @@ fb_username:
 
 # Build settings
 markdown: kramdown
+collections:
+  - menu-items
+  
 permalink: pretty
 plugins:
   - jekyll-feed
