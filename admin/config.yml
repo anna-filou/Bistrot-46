@@ -3,7 +3,6 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 # This line should *not* be indented
-publish_mode: # optional
 
 # This line should *not* be indented
 media_folder: "menu-photos" # original: Media files will be stored in the repo under images/uploads
@@ -12,7 +11,6 @@ media_folder: "menu-photos" # original: Media files will be stored in the repo u
 display_url: https://bistrot46.gr
 
 # CMS UI will change the logo displayed at the top of the login page
-logo_url: 
 
 # collections are 100% dependent on the actual content you want on the site
 collections:
