@@ -1,0 +1,61 @@
+  <div id="menu-tabs" class="tabs-wrapper">
+    <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+      <div class="tabs-menu w-tab-menu">
+        <a data-w-tab="1-Food" class="tab-link w-inline-block w-tab-link">
+          <div>
+            Main
+            {% if page.lang == "en" %}
+            Main
+            {% else %}
+            Κυρίως
+            {% endif %}
+          </div>
+        </a>
+        <a data-w-tab="Salads" class="tab-link w-inline-block w-tab-link">
+          <div>
+            {% if page.lang == "en" %}
+            Salads
+            {% else %}
+            Σαλάτες
+            {% endif %}
+          </div>
+        </a>
+        <a data-w-tab="Breakfast" class="tab-link w-inline-block w-tab-link">
+          <div>
+            {% if page.lang == "en" %}
+            Breakfast
+            {% else %}
+            Πρωινό
+            {% endif %}
+          </div>
+        </a>
+        <a data-w-tab="Beverages" class="tab-link w-inline-block w-tab-link w--current">
+          <div>
+            {% if page.lang == "en" %}
+            BEVERAGES
+            {% else %}
+            Ποτά
+            {% endif %}
+          </div>
+        </a>
+      </div>
+      <div class="tabs-content w-tab-content">
+        <div data-w-tab="1-Food" class="w-tab-pane">
+          <div class="separator-2"></div>
+          {% include menu-main.html %}
+        </div>
+        <div data-w-tab="Salads" class="w-tab-pane">
+          <div class="separator-2"></div>
+            {% include menu-salads.html %}
+        </div>
+        <div data-w-tab="Breakfast" class="tab-pane w-tab-pane">
+          <div class="separator-2"></div>
+          {% include menu-breakfast.html %}
+        </div>
+        <div data-w-tab="Beverages" class="w-tab-pane w--tab-active">
+          <div class="separator-2"></div>
+          {% include menu-beverages.html %}
+        </div>
+      </div>
+    </div>
+  </div>
