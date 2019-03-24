@@ -23,8 +23,12 @@ fb_username:
 
 # Build settings
 markdown: kramdown
+collections_dir: menu-items
 collections:
-  - menu-items
+  - breakfasts
+  - drinks
+  - mains
+  - salads
   
 permalink: pretty
 plugins:
