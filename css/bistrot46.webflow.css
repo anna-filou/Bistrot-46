@@ -2526,7 +2526,7 @@ a {
 }
 
 .menu-img {
-  width: 35%;
+  max-width: 35%;
   min-width: 35%;
   margin-right: 10px;
   border-radius: 8px;
@@ -2820,9 +2820,6 @@ a {
   }
   .logomark {
     font-size: 150px;
-  }
-  .menu-img {
-    max-width: 120px;
   }
 }
 
@@ -3196,7 +3193,7 @@ a {
     width: 50px;
   }
   .menu-img {
-    width: 100%;
+    max-width: 70%;
     min-width: 70%;
     margin-right: auto;
     margin-bottom: 5px;
@@ -3706,7 +3703,7 @@ a {
     font-size: 90px;
   }
   .menu-img {
-    width: 35%;
+    max-width: 35%;
     min-width: 35%;
     margin-right: 10px;
     margin-left: 0px;
